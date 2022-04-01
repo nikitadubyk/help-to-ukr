@@ -1,0 +1,19 @@
+@font-face {
+	font-family: 'Proba Pro Lt';
+	src: url(../../assets/fonts/ProbaPro-Light.eot) format('embedded-opentype'),
+	url(../../assets/fonts/ProbaPro-Light.eot) format('embedded-opentype'),
+	url(../../assets/fonts/ProbaPro-Light.woff) format('woff'),
+	url(../../assets/fonts/ProbaPro-Light.ttf) format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proba Pro Lt';
+	src: url(../../assets/fonts/ProbaPro-LightItalic.eot) format('embedded-opentype'),
+	url(../../assets/fonts/ProbaPro-LightItalic.eot) format('embedded-opentype'),
+	url(../../assets/fonts/ProbaPro-LightItalic.woff) format('woff'),
+	url(../../assets/fonts/ProbaPro-LightItalic.ttf) format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}

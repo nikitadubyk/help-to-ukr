@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Proba Pro Md';
+	src: url(../../assets/fonts/ProbaPro-Medium.eot) format('embedded-opentype'),
+	url(../../assets/fonts/ProbaPro-Medium.eot) format('embedded-opentype'),
+	url(../../assets/fonts/ProbaPro-Medium.woff) format('woff'),
+	url(../../assets/fonts/ProbaPro-Medium.ttf) format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
