@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <title>HELPTOUKR</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div
+                        class="col py-3 mb-4 my d-flex justify-content-between align-items-center"
+                    >
+                        <a href="#">
+                            <p class="header__logo me-3">HELPTOUKR</p>
+                        </a>
+
+                        <img src="./assets/img/crest.svg" alt="crest" />
+
+                        <div
+                            class="d-flex justify-content-between align-items-center position-relative"
+                        >
+                            <button class="header__avatar mx-2">
+                                <img
+                                    src="assets/img/avatar.png"
+                                    alt="user avatar"
+                                />
+                                <span class="upper-dot"></span>
+                            </button>
+                            <!-- Если юзер залогинился показывается его аватарка, если нет, кнопка с юзером -->
+                            <!-- <button
+                                type="button"
+                                class="header__button px-2 mx-2"
+                            >
+                                <img src="assets/icons/user.svg" alt="user" />
+                            </button> -->
+
+                            <button
+                                type="button"
+                                class="header__button mx-2 px-1"
+                            >
+                                <img
+                                    src="assets/icons/add.svg"
+                                    alt="add a trip"
+                                />
+                            </button>
+
+                            <button
+                                type="button"
+                                class="header__button px-2 mx-2"
+                            >
+                                <img
+                                    src="assets/icons/horizontal_dot.svg"
+                                    alt="menu"
+                                />
+                            </button>
+
+                            <!-- dropdown -->
+                            <div class="dropdown__profile">
+                                <div class="dropdown__item my-2">
+                                    <img
+                                        src="./assets/icons/menu/user.svg"
+                                        alt="user"
+                                        class="me-2"
+                                    />
+                                    <div>Профіль</div>
+                                </div>
+                                <div class="dropdown__item my-2">
+                                    <div class="position-relative me-2 p-1">
+                                        <img
+                                            src="./assets/icons/menu/car.svg"
+                                            alt="car"
+                                            class="position-relative"
+                                        />
+                                        <span class="upper-dot"></span>
+                                    </div>
+                                    <div>Вашi поїздки</div>
+                                </div>
+                                <div class="dropdown__item my-2">
+                                    <div class="position-relative me-2">
+                                        <img
+                                            src="./assets/icons/menu/bell-ring.svg"
+                                            alt="bell-ring"
+                                            class="me-2"
+                                        />
+                                        <span class="upper-dot_number">14</span>
+                                    </div>
+                                    <div>Повідомлення</div>
+                                </div>
+                            </div>
+
+                            <div class="dropdown__profile_advance">
+                                <div class="dropdown__item">
+                                    <img
+                                        src="./assets/icons/menu/login.svg"
+                                        alt="login"
+                                        class="me-4"
+                                    />
+                                    <div>Вхід</div>
+                                </div>
+                                <div class="dropdown__item">
+                                    <img
+                                        src="./assets/icons/menu/car.svg"
+                                        alt="car"
+                                        class="me-4"
+                                    />
+                                    <div>Вашi поїздки</div>
+                                </div>
+                                <div class="dropdown__item">
+                                    <img
+                                        src="./assets/icons/menu/bell-ring.svg"
+                                        alt="bell-ring"
+                                        class="me-4"
+                                    />
+                                    <div>Повідомлення</div>
+                                </div>
+                                <div class="dropdown__item">
+                                    <img
+                                        src="./assets/icons/menu/volume.svg"
+                                        alt="volume"
+                                        class="me-4"
+                                    />
+                                    <div>Оголошення</div>
+                                </div>
+                                <div class="dropdown__item">
+                                    <img
+                                        src="./assets/icons/menu/hands.svg"
+                                        alt="hands"
+                                        class="me-3"
+                                    />
+                                    <div>Підтримка</div>
+                                </div>
+
+                                <div class="underline"></div>
+
+                                <div class="dropdown__item">
+                                    <img
+                                        src="./assets/icons/menu/sign-out.svg"
+                                        alt="sing out"
+                                        class="me-4"
+                                    />
+                                    <div>Вийти</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="intro">
+            <div class="container">
+                <div class="text-white text-center">
+                    <a
+                        class="header__logo border rounded border-white px-3 py-2"
+                        href="#"
+                        >#helptoukr</a
+                    >
+                    <h1 class="title__header my-4">Волонтерські перевезення</h1>
+                    <h4 class="title__content">
+                        Волонтерські перевезення людей, їжі та волонтерських
+                        речей
+                    </h4>
+                </div>
+            </div>
+        </div>
+
+        <main class="main__content mbb">
+            <!--Секція пошуку -->
+            <section class="container">
+                <div class="box box_btm">
+                    <div
+                        class="row justify-content-center align-items-start mb-5"
+                    >
+                        <div class="col-lg-3 col-6 text-center px-3 py-3">
+                            <div class="icon-box">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="34"
+                                    height="34"
+                                    fill="#0057B880"
+                                    class="bi bi-check-circle"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                                    />
+                                    <path
+                                        d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"
+                                    />
+                                </svg>
+                                <p class="pt-3">Напишіть місто відправлення</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6 text-center px-3 py-3">
+                            <div class="icon-box">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="34"
+                                    height="34"
+                                    fill="#0057B880"
+                                    class="bi bi-check-circle"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                                    />
+                                    <path
+                                        d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"
+                                    />
+                                </svg>
+                                <p class="pt-3">Напишіть місто прибуття</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6 text-center px-3 py-3">
+                            <div class="icon-box">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="34"
+                                    height="34"
+                                    fill="#0057B880"
+                                    class="bi bi-check-circle"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                                    />
+                                    <path
+                                        d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"
+                                    />
+                                </svg>
+                                <p class="pt-3">Напишіть час надсилання</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6 text-center px-3 py-3">
+                            <div class="icon-box">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="34"
+                                    height="34"
+                                    fill="#0057B880"
+                                    class="bi bi-check-circle"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                                    />
+                                    <path
+                                        d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"
+                                    />
+                                </svg>
+                                <p class="pt-3">Натисніть кнопку "Шукати"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container justify-content-center mb-3">
+                        <div class="row mb-2 px-2">
+                            <div class="col-md-4 my-2">
+                                <div class="form p-1">
+                                    <img
+                                        class="mx-1"
+                                        src="assets/icons/location.svg"
+                                        alt=""
+                                    />
+                                    <input
+                                        type="text"
+                                        class="inp"
+                                        placeholder="Місто відправлення?"
+                                    />
+                                </div>
+                            </div>
+                            <div class="col-md-4 my-2">
+                                <div class="form p-1">
+                                    <img
+                                        class="mx-1"
+                                        src="assets/icons/location.svg"
+                                        alt=""
+                                    />
+                                    <input
+                                        type="text"
+                                        class="inp"
+                                        placeholder="Куди?"
+                                    />
+                                </div>
+                            </div>
+                            <div class="col-md-4 my-2">
+                                <div class="form p-1">
+                                    <img
+                                        class="mx-1"
+                                        src="assets/icons/calendar.svg"
+                                        alt=""
+                                    />
+                                    <input
+                                        type="text"
+                                        class="inp"
+                                        placeholder="Коли?"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-grid px-2">
+                            <button class="btn btn-primary py-4" type="button">
+                                Шукати
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Секція пропозицій -->
+            <section class="main__content">
+                <div class="container">
+                    <div class="box text-center">
+                        <h1 class="style_h1">Пропозиції</h1>
+                    </div>
+                    <div id="cardP" class="card mb-3">
+                        <div class="row card-body align-items-center py-3">
+                            <div class="col-12 col-md-4 px-2 py-1">
+                                <span class="mx-2">Київ</span>
+                                <img
+                                    class="img_arrow mx-2"
+                                    width="15px"
+                                    height="15px"
+                                    src="assets/icons/arrow-right.svg"
+                                    alt=""
+                                />
+                                <span class="mx-2">Херсон</span>
+                            </div>
+                            <div class="col-12 col-md-4 px-2 py-1">
+                                <span class="flex-shrink-0">2 людей</span>
+                            </div>
+                            <div class="col-12 col-md-4 px-2 py-1">
+                                <span>Багажник вільний</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-grid text-center">
+                        <button class="btn btn-primary py-4" type="button">
+                            Більше
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Секція оголошень -->
+            <section class="main__content box_btm">
+                <div class="container">
+                    <div class="box text-center">
+                        <h1 class="style_h1 mb-5">Оголошення</h1>
+                        <div class="d-flex justify-content-center">
+                            <div class="d-inline-block">
+                                <div class="form align-items-center">
+                                    <button class="mx-2 style_form">+</button>
+                                    <input
+                                        type="text"
+                                        class="inp"
+                                        placeholder="Фільтр?"
+                                    />
+                                    <button type="button" class="mx-3">
+                                        <img
+                                            src="assets/icons/filter.svg"
+                                            alt=""
+                                        />
+                                    </button>
+                                </div>
+                            </div>
+                            <button type="button" class="mx-3">
+                                <img
+                                    src="assets/icons/blue_plus.svg"
+                                    width="62px"
+                                    height="62px"
+                                    alt=""
+                                />
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="cardO" class="card mb-3">
+                        <div class="row card-body align-items-center py-3">
+                            <div class="col-12 col-md-4 px-2 py-1">
+                                <span class="mx-2">Київ</span>
+                                <img
+                                    class="img_arrow mx-2"
+                                    width="15px"
+                                    height="15px"
+                                    src="assets/icons/arrow-right.svg"
+                                    alt=""
+                                />
+                                <span class="mx-2">Херсон</span>
+                            </div>
+                            <div class="col-12 col-md-3 px-2 py-1">
+                                <span class="flex-shrink-0">2 людей</span>
+                            </div>
+                            <div class="col-12 col-md-5 px-2 py-1">
+                                <span
+                                    >Доброго дня, заберіть мене, будь ласка, з
+                                    Києва кудись в Польщу</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-grid text-center">
+                        <button class="btn btn-primary py-4" type="button">
+                            Більше
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer bg_blue py-3">
+                <div class="container">
+                    <div class="row">
+                        <div
+                            class="footer__wrapper col py-3 mb-4 my d-flex justify-content-between align-items-center flex-wrap"
+                        >
+                            <a href="#">
+                                <p class="header__logo me-3">HELPTOUKR</p>
+                            </a>
+
+                            <img src="./assets/img/crest.svg" alt="crest" />
+
+                            <div
+                                class="footer__info d-flex flex-column text-end"
+                            >
+                                <a href="tel:+380504902673" class="fs-4"
+                                    >+ 38 (050) 490-26-73</a
+                                >
+                                <a href="mailto:vashaorganizaciya@mail.ua"
+                                    >vashaorganizaciya@mail.ua</a
+                                >
+                            </div>
+                        </div>
+                        <div class="footer__descr text-white">
+                            <p class="fw-bold">Про проект</p>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Enim ipsa nihil eius aperiam
+                                fugiat dolorum iure quis. Deleniti, repellat
+                                consequuntur placeat sit veritatis at distinctio
+                                exercitationem a voluptas, ad odit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </body>
+</html>
